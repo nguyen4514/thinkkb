@@ -6,45 +6,53 @@
     <style>
         body { font-family: 'MS Sans Serif', Arial, sans-serif; background-color: #C0C0C0; padding: 50px; }
         .window { background: #C0C0C0; border: 2px solid; border-color: #FFF #808080 #808080 #FFF; padding: 2px; width: 550px; margin: auto; }
-        .title-bar { background: #000080; color: white; padding: 3px 10px; font-weight: bold; display: flex; justify-content: space-between; }
+        .title-bar { background: #000080; color: white; padding: 3px 10px; font-weight: bold; }
         .content { padding: 20px; background: white; border: 1px solid #808080; }
         h1 { font-size: 18px; margin-top: 0; }
         h2 { font-size: 16px; margin-bottom: 5px; }
         a { color: blue; }
-        .step-box { border: 1px inset #FFF; background: #f0f0f0; padding: 10px; margin-bottom: 15px; }
+        .step-box { border: 1px inset #FFF; background: #f0f0f0; padding: 12px; margin-bottom: 15px; }
+        .provider-list { font-size: 13px; line-height: 1.5; margin-left: 10px; }
         hr { border: 0; border-top: 1px solid #808080; margin: 20px 0; }
+        .footer-nav { font-size: 12px; text-align: center; }
+        .donate-link { color: #800080; font-weight: bold; text-decoration: none; border: 1px solid #C0C0C0; padding: 2px 5px; background: #E0E0E0; border-color: #FFF #808080 #808080 #FFF; }
     </style>
 </head>
 <body>
     <div class="window">
-        <div class="title-bar">
-            <span>ThinkKB_Manual.hlp</span>
-        </div>
+        <div class="title-bar">ThinkKB_Manual.hlp</div>
         <div class="content">
             <h1>Configuration & Setup</h1>
-            <p>Please follow these steps to initialize the documentation engine:</p>
+            <p>To initialize the documentation engine, please configure your preferred AI provider:</p>
             
             <div class="step-box">
                 <h2>1. API Credentials</h2>
-                <p>Acquire an API key from <a href="https://aistudio.google.com/" target="_blank">Google AI Studio</a> (Gemini) or <a href="https://console.groq.com/" target="_blank">Groq Console</a>.</p>
+                <p>ThinkKB supports the following providers. Acquire a key from your preferred service:</p>
+                <div class="provider-list">
+                    • <b>Google Gemini:</b> <a href="https://aistudio.google.com/" target="_blank">Get Gemini Key</a> (Free Tier Available)<br>
+                    • <b>Groq:</b> <a href="https://console.groq.com/" target="_blank">Get Groq Key</a><br>
+                    • <b>OpenAI:</b> <a href="https://platform.openai.com/api-keys" target="_blank">Get OpenAI Key</a><br>
+                    • <b>Anthropic:</b> <a href="https://console.anthropic.com/" target="_blank">Get Claude Key</a>
+                </div>
             </div>
 
             <div class="step-box">
                 <h2>2. Extension Linking</h2>
-                <p>Open ThinkKB settings and paste your key into the designated field. Select your preferred model (e.g., Gemini 1.5 Flash) and click "Save".</p>
+                <p>Open ThinkKB settings, paste your key, and select your model. Click "Save" to commit the changes to local storage.</p>
             </div>
 
             <div class="step-box">
-                <h2>3. Execution</h2>
-                <p>Click "Start Recording" before beginning your workflow. When finished, click "Stop". ThinkKB will capture the final state and compile the KB draft.</p>
+                <h2>3. Tutorial Video</h2>
+                <p><i>[Video placeholder: A detailed walkthrough will be embedded here upon official release.]</i></p>
             </div>
 
             <hr>
-            <p>
+            <div class="footer-nav">
                 <a href="index.html">Home</a> | 
                 <a href="faq.html">FAQ</a> | 
-                <a href="privacy.html">Privacy Policy</a>
-            </p>
+                <a href="privacy.html">Privacy</a> | 
+                <a href="https://buymeacoffee.com/nguyen4514" target="_blank" class="donate-link">☕ Buy me a coffee</a>
+            </div>
         </div>
     </div>
 </body>
